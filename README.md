@@ -1,5 +1,5 @@
 # MyNotes App
-## This is the app that got me an "A" in my iOS Development class. - 
+## This is the app that got me an "A" in my iOS Development class. - https://softuni.bg/certificates/details/202630/34d56238
 ### It is a simple app that lets a user input a multiline text field
 Then the user can choose to save his note. The note is being saved through the UserDefaults class. After it has been saved, the user can view his last saved note withing the TextView, using the button "View Note". The app has a couple of hidden features that were a part of the requirements of my university, such as:
 - When there is no saved note or nothing in the TextView, then the "Save Note" button is inactive. Also, the "View Note" button is inactive, until a note is saved.
