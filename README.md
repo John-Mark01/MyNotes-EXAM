@@ -9,3 +9,5 @@ Then the user can choose to save his note. The note is being saved through the U
 - When the user clicks on "Save Note", the note is being saved, and the "Save Note" button is being disabled. Only when the user taps "View Note", and makes a change to his note, then the "Save Note" button enables itself.
 - In addition to the UI there are Accelerometer updates. This enables the user to lean his phone downwards. When done, his text will be deleted. This feature is there if the user wants to start over his note.
 - Within the Core Motion accelerometer updates. there is also an Alert that prompts when the user's device is being tilted. It alerts the user that his text will be deleted. Then the user has a choice whether to delete the text or cancel.
+
+<img width="309" alt="image" src="https://github.com/John-Mark01/MyNotes-EXAM/assets/147177515/d954f89d-ea54-4743-9a3f-2f2082ab4153">
