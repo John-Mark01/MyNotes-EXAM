@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_background" translatesAutoresizingMaskIntoConstraints="NO" id="hPM-TO-zcC">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mz-a2-mNL">
+                                <rect key="frame" x="92" y="568" width="209" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="0aB-Fu-oFl"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="htM-Sc-1rQ"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Save Note" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" systemColor="viewFlipsideBackgroundColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveNoteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oZJ-sG-FW5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NvB-Th-9dI">
+                                <rect key="frame" x="92" y="633" width="209" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Tv4-7g-NHq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="dGH-vg-uEz"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Show saved note" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="showSavedNoteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eAy-LK-f3E"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1Y-Jb-4fa">
+                                <rect key="frame" x="16" y="323" width="361" height="206"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" smartDashesType="yes"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hPM-TO-zcC" secondAttribute="bottom" id="07R-ai-GcC"/>
+                            <constraint firstItem="hPM-TO-zcC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="18z-xQ-WmE"/>
+                            <constraint firstItem="R1Y-Jb-4fa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="95Y-KP-s1k"/>
+                            <constraint firstItem="R1Y-Jb-4fa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9gW-K3-JHA"/>
+                            <constraint firstItem="NvB-Th-9dI" firstAttribute="top" secondItem="6mz-a2-mNL" secondAttribute="bottom" constant="20" id="ASw-UW-596"/>
+                            <constraint firstItem="NvB-Th-9dI" firstAttribute="width" secondItem="6mz-a2-mNL" secondAttribute="width" id="AXg-BJ-zBe"/>
+                            <constraint firstItem="hPM-TO-zcC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Bya-h0-EcQ"/>
+                            <constraint firstItem="NvB-Th-9dI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EZQ-23-vGr"/>
+                            <constraint firstItem="NvB-Th-9dI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gob-xv-8bZ"/>
+                            <constraint firstItem="R1Y-Jb-4fa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MFa-7F-PYa"/>
+                            <constraint firstItem="R1Y-Jb-4fa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="264" id="R3F-yO-UTh"/>
+                            <constraint firstItem="6mz-a2-mNL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rxv-5e-86C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6mz-a2-mNL" secondAttribute="trailing" constant="92" id="V9G-wL-WE2"/>
+                            <constraint firstAttribute="trailing" secondItem="hPM-TO-zcC" secondAttribute="trailing" id="X6R-94-e9l"/>
+                            <constraint firstItem="6mz-a2-mNL" firstAttribute="top" secondItem="R1Y-Jb-4fa" secondAttribute="bottom" constant="39" id="gIh-Df-Wai"/>
+                            <constraint firstItem="6mz-a2-mNL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o9E-Cy-ZKC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="saveNoteButton" destination="6mz-a2-mNL" id="o5b-yW-tzv"/>
+                        <outlet property="showSavedNoteButton" destination="NvB-Th-9dI" id="DfZ-PD-YBc"/>
+                        <outlet property="textView" destination="R1Y-Jb-4fa" id="ECd-Ne-M7K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app_background" width="1000" height="1500"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
